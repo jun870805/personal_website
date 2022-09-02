@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./font/NotoSans-Black.ttf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./font/NotoSans-ExtraBold.ttf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./font/NotoSans-Bold.ttf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./font/NotoSans-SemiBold.ttf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./font/NotoSans-Medium.ttf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./font/NotoSans-Thin.ttf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./font/NotoSans-Light.ttf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./font/NotoSans-ExtraLight.ttf');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 100;
+}
+
+@mixin H1-Regular {
+  font-family: 'NotoSans';
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+@mixin H1-Medium {
+  font-family: 'NotoSans';
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+@mixin H2-Bold {
+  font-family: 'NotoSans';
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 140%;
+  letter-spacing: 0.0025em;
+}
+
+@mixin H2-Medium {
+  font-family: 'NotoSans';
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.0025em;
+}
+
+@mixin H2-Regular {
+  font-family: 'NotoSans';
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 140%;
+  letter-spacing: 0.0025em;
+}
+
+@mixin Subtitle1-Bold {
+  font-family: 'NotoSans';
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+@mixin Subtitle1-Medium {
+  font-family: 'NotoSans';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+@mixin Subtitle1-Regular {
+  font-family: 'NotoSans';
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+@mixin Subtitle2-Bold {
+  font-family: 'NotoSans';
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 140%;
+  letter-spacing: 0.0015em;
+}
+
+@mixin Subtitle2-Medium {
+  font-family: 'NotoSans';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.0015em;
+}
+
+@mixin Subtitle2-Regular {
+  font-family: 'NotoSans';
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 140%;
+  letter-spacing: 0.0015em;
+}
+
+@mixin Body1-Bold {
+  font-family: 'NotoSans';
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 140%;
+  letter-spacing: 0.0015em;
+}
+
+@mixin Body1-Regular {
+  font-family: 'NotoSans';
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 140%;
+  letter-spacing: 0.0015em;
+}
+
+@mixin Body2-Bold {
+  font-family: 'NotoSans';
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 140%;
+  letter-spacing: 0.0025em;
+}
+
+@mixin Body2-Medium {
+  font-family: 'NotoSans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.0025em;
+}
+
+@mixin Body2-Regular {
+  font-family: 'NotoSans';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 140%;
+  letter-spacing: 0.0025em;
+}
+
+@mixin Caption-Bold {
+  font-family: 'NotoSans';
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 140%;
+  letter-spacing: 0.004em;
+}
+
+@mixin Caption-Regular {
+  font-family: 'NotoSans';
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 140%;
+  letter-spacing: 0.004em;
+}
+
+@mixin Mobile-App-Body2-Regular {
+  font-family: 'NotoSans';
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+}
+

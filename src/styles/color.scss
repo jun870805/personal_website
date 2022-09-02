@@ -1,0 +1,76 @@
+:root[data-theme='light'] {
+  --gray000: #FFFFFF;
+  --gray100: #F1F2F3;
+  --gray200: #DFE1E2;
+  --gray300: #D0D0D0;
+  --gray400: #B8B8B8;
+  --gray500: #999999;
+  --gray600: #6A6A6A;
+  --gray700: #464646;
+  --gray800: #1D1D1D;
+  --level1: 0px 0px 3px rgba(29, 29, 29, 0.2);
+  --level2: 0px 0px 12px rgba(29, 29, 29, 0.2);
+  --level4: 0px 8px 30px rgba(0, 86, 97, 0.1);
+}
+
+:root[data-theme='dark'] {
+  --gray000: #262626;
+  --gray100: #383838;
+  --gray200: #525252;
+  --gray300: #808080;
+  --gray400: #9E9E9E;
+  --gray500: #B8B8B8;
+  --gray600: #DFE1E2;
+  --gray700: #F1F2F3;
+  --gray800: #FFFFFF;
+  --level1: 0px 0px 3px rgba(255, 255, 255, 0.3);
+  --level2: 0px 0px 12px rgba(255, 255, 255, 0.2);
+  --level4: 0px 8px 30px rgba(255, 255, 255, 0.1);
+}
+
+// Brand
+$primary: #0096A9;
+$primaryShade1: #5EBECA;
+$primaryShade2: #68D3E0;
+$primaryShade4: #FFFFFF;
+$secondary: #005661;
+$secondaryShade1: #008489;
+$secondaryShade2: #00A7AD;
+
+// Neutrals
+$gray000: var(--gray000);
+$gray100: var(--gray100);
+$gray200: var(--gray200);
+$gray300: var(--gray300);
+$gray400: var(--gray400);
+$gray500: var(--gray500);
+$gray600: var(--gray600);
+$gray700: var(--gray700);
+$gray800: var(--gray800);
+
+// Chart
+$chart1: #19C896;
+$chart2: #F9C501;
+$chart3: #BD6DFD;
+$chartRise: #40C16C;
+$chartRiseShade1: #2C924E;
+$chartRiseShade2: #87DEA5;
+$chartDrop: #EE4D4D;
+$chartDropShade1: #C54444;
+$chartDropShade2: #FF9595;
+
+// Messaging
+$information: #0070F5;
+$informationShade2: #E2EFFF;
+$success: #1CC336;
+$successShade: #CCF5D2;
+$error: #F5352A;
+$errorShade2: #FFBAB6;
+$warning: #F5C200;
+$warningShade2: #FFEBA0;
+
+// Shadow
+$level1: var(--level1);
+$level2: var(--level2);
+$level3: 0px 2px 10px rgba(0, 0, 0, 0.2);
+$level4: var(--level3);

@@ -1,0 +1,34 @@
+@use '../../styles/color.scss';
+@import '../../styles/font.scss';
+
+.notFound {
+  margin: 250px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 200px;
+    object-fit: contain;
+    margin-bottom: 36px;
+  }
+
+  p {
+    @include Body1-Regular;
+    color: color.$gray700;
+    margin: 0;
+  }
+
+  button {
+    margin-top: 48px;
+    height: 40px;
+    width: 150px;
+    background-color: color.$primary;
+    @include Subtitle2-Regular;
+    color: color.$gray000;
+    border: none;
+    border-radius: 25px;
+  }
+}
