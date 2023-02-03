@@ -1,0 +1,58 @@
+@use '../../styles/color.scss';
+@use '../../styles/breakpoint.scss';
+@import '../../styles/font.scss';
+
+.mobileMenu{
+  display: none;
+  padding: 0 8px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .textButtonContainer{
+    .textButton{
+      @include Subtitle2-Regular;
+      color: color.$gray700;
+      margin-bottom: 16px;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 8px;
+    }
+  
+    .textButton:last-child {
+      margin-bottom: 24px;
+    }
+
+    .textButton:hover {
+      background: rgba(0, 150, 169, 0.1);
+      
+
+      .arrow {
+        display: block;
+      }
+    }
+  }
+
+  .languageContainer {
+    display: flex;
+    margin-bottom: 24px;
+
+    .languageButton{
+      @include Body1-Regular;
+      color: color.$gray800;
+      margin-right: 16px;
+      cursor: pointer;
+    }
+
+    .selected{
+      color: color.$primary;
+      cursor: default;
+    }
+  }
+}
+
+@media (max-width: breakpoint.$mobile) {
+  .mobileMenu{
+    display: block;
+  }
+}

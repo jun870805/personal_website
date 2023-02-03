@@ -1,9 +1,10 @@
 /* eslint-disable quote-props */
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import { LOCAL_STORAGE_KEYS } from './utlis/LocalStorages'
+import { LOCAL_STORAGE_KEYS } from './utils/LocalStorages'
 import en from './locales/en-US.json'
 import tw from './locales/zh-TW.json'
+import cn from './locales/zh-CN.json'
 
 const resources = {
   'en': {
@@ -11,6 +12,9 @@ const resources = {
   },
   'tw': {
     translation: tw
+  },
+  'cn': {
+    translation: cn
   }
 }
 

@@ -1,0 +1,29 @@
+@use '../../styles/color.scss';
+@use '../../styles/breakpoint.scss';
+@import '../../styles/font.scss';
+
+.button {
+  .options {
+    position: relative;
+    z-index: 10;
+
+    .space {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 10px;
+      width: 100%;
+    }
+  
+    .optionsContainer {
+      position: absolute;
+      top: 10px;
+      min-width: 80px;
+      background: color.$gray000;
+      border-radius: 8px;
+      padding: 12px 8px;
+      box-sizing: border-box;
+      box-shadow: color.$level1;
+    }
+  }
+}

@@ -1,20 +1,21 @@
-.App {
-  text-align: center;
+@use '../../styles/color.scss';
+@import '../../styles/font.scss';
+
+.container {
+  @include Body1-Regular;
+  color: color.$gray000;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 
   .logo {
     height: 40vmin;
     pointer-events: none;
-  }
-  
-  .header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
   }
   
   .link {

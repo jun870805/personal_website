@@ -1,0 +1,146 @@
+@use '../../styles/color.scss';
+@use '../../styles/breakpoint.scss';
+@import '../../styles/font.scss';
+
+.container{
+  width: 100vw;
+}
+
+.header {
+  height: 120px;
+  padding: 0px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  box-sizing: border-box;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    @include Subtitle2-Regular;
+    color: color.$gray700;
+
+    .textButton {
+      cursor: pointer;
+      margin-right: 40px;
+    }
+
+    .option {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: space-between;
+
+      .icon {
+        margin-right: 4px;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+
+        svg {
+          width: 30px;
+          height: 30px;
+          fill: color.$gray700;
+        }
+      }
+    }
+
+    .dropDownOption {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include Body2-Regular;
+      color: color.$gray800;
+      width: 88px;
+      height: 28px;
+      border-radius: 8px;
+      padding: 4px 12px;
+      box-sizing: border-box;
+      cursor: pointer;
+      margin-bottom: 12px;
+    }
+
+    .dropDownOption:last-child {
+      margin: 0;
+    }
+
+    .dropDownOption:hover {
+      background: rgba(0, 150, 169, 0.1);
+
+      .arrow {
+        display: block;
+      }
+    }
+
+    .menuButton {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: breakpoint.$mobile) {
+  @keyframes BackgroundColorAnimation{
+    from{ background-color: transparent; }
+    to{ background-color: rgba(255, 255, 255, 0.6); }
+  }
+
+  .menuOpen {
+    background-color: rgba(255, 255, 255, 0.6);
+    animation-name: BackgroundColorAnimation;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: ease;
+  }
+
+  @keyframes BackgroundTranslateAnimation{
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .openMenu{
+    animation-name: BackgroundTranslateAnimation;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: ease;
+  }
+
+  .header {
+    height: 56px;
+    padding: 0px 16px;
+
+    .menu {
+      .textButton {
+        display: none;
+      }
+
+      .languageButton{
+        display: none;
+      }  
+
+      .menuButton {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+  
+        svg {
+          width: 40px;
+          height: 40px;
+          fill: color.$gray700;
+        }
+      }
+    }
+  }
+}
