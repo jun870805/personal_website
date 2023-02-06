@@ -1,9 +1,8 @@
 @use '../../styles/color.scss';
+@use '../../styles/breakpoint.scss';
 @import '../../styles/font.scss';
 
-.container {
-  @include Body1-Regular;
-  color: color.$gray000;
+.infoContainer {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -13,13 +12,69 @@
   justify-content: center;
   
 
-  .logo {
-    height: 40vmin;
-    pointer-events: none;
+  .title {
+    @include H1-Medium;
+    color: color.$gray800;
+    margin-bottom: 8px;
   }
-  
-  .link {
-    color: #61dafb;
+
+  .solgan {
+    @include Subtitle1-Regular;
+    color: color.$gray800;
+    margin: 0 16px 16px 16px;
+    text-align: center;
+  }
+
+  .linkContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 48px 0;
+
+    .icon {
+      margin: 0 16px;
+      align-items: center;
+      cursor: pointer;
+
+      svg {
+        width: 48px;
+        height: 48px;
+        fill: color.$gray800;
+      }
+    }
+
+    .github{
+      svg {
+        path{
+          fill: color.$gray800;
+        }
+      }
+    }
   }
 }
 
+.downContainer {
+  position: absolute;
+  bottom: 24px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 36px;
+    height: 36px;
+
+    path{
+      fill: color.$gray800;
+    }
+  }
+}
+
+@media (max-width: breakpoint.$mobile){
+  .downContainer {
+    bottom: 4px;
+  }
+}

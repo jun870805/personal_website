@@ -11,7 +11,7 @@ const SwitchRoutes = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0)
-    document.documentElement.setAttribute('data-theme', 'light')
+    document.documentElement.setAttribute('data-theme', 'dark')
   }, [pathname])
 
   return (

@@ -15,7 +15,7 @@
   justify-content: right;
   box-sizing: border-box;
 
-  .menu {
+  .menuContainer {
     display: flex;
     align-items: center;
     @include Subtitle2-Regular;
@@ -44,6 +44,10 @@
           fill: color.$gray700;
         }
       }
+
+      p {
+        margin: 0;
+      }  
     }
 
     .dropDownOption {
@@ -66,82 +70,124 @@
     }
 
     .dropDownOption:hover {
-      background: rgba(0, 150, 169, 0.1);
+      background: color.$hover1;
 
       .arrow {
         display: block;
       }
     }
+  }
 
-    .menuButton {
-      display: none;
+  .menuButton {
+    display: none;
+  }
+}
+
+.mobileMenu{
+  display: none;
+  padding: 0 8px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .textButtonContainer{
+    .textButton{
+      @include Subtitle2-Regular;
+      color: color.$gray700;
+      margin-bottom: 8px;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 8px;
+    }
+  
+    .textButton:last-child {
+      margin-bottom: 12px;
+    }
+
+    .textButton:hover {
+      background: color.$hover1;
+  
+      .arrow {
+        display: block;
+      }
     }
   }
 }
 
-@media (max-width: breakpoint.$mobile) {
-  @keyframes BackgroundColorAnimation{
-    from{ background-color: transparent; }
-    to{ background-color: rgba(255, 255, 255, 0.6); }
-  }
-
+@media (max-width: breakpoint.$mobile){
   .menuOpen {
-    background-color: rgba(255, 255, 255, 0.6);
-    animation-name: BackgroundColorAnimation;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-play-state: running;
-    animation-timing-function: ease;
+    background-color: color.$hover2;
   }
 
-  @keyframes BackgroundTranslateAnimation{
+  @keyframes slide-down{
     from {
-      transform: translateY(-100%);
-      opacity: 0;
+      background-color: transparent; 
+      transform: scale(1,0);
     }
     to {
-      transform: translateY(0);
-      opacity: 1;
+      background-color: color.$hover2;
+      transform: scale(1,1);
+    }
+  }
+
+  @-webkit-keyframes slide-down{
+    from {
+      background-color: transparent; 
+      -webkit-transform: scale(1,0);
+    }
+    to {
+      background-color: color.$hover2;
+      -webkit-transform: scale(1,1);
     }
   }
 
   .openMenu{
-    animation-name: BackgroundTranslateAnimation;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-play-state: running;
-    animation-timing-function: ease;
+    background-color: color.$hover2;
+    max-height: 160px;
+    transition: max-height 0.3s ease-in;
+    transform-origin: 50% 0;
+    animation: slide-down 0.3s ease-in ;
+    -webkit-animation: slide-down 0.3s  ease-in ;
   }
 
   .header {
     height: 56px;
     padding: 0px 16px;
 
-    .menu {
+    .menuContainer {
       .textButton {
         display: none;
       }
 
       .languageButton{
-        display: none;
-      }  
+        .option{
+          .icon {
+            margin-right: 0px;
+          }
 
-      .menuButton {
-        display: block;
+          p {
+            display: none;
+          }  
+        }  
+      }  
+    }
+
+    .menuButton {
+      display: block;
+      margin-left: 24px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+
+      svg {
         width: 40px;
         height: 40px;
-        cursor: pointer;
-  
-        svg {
-          width: 40px;
-          height: 40px;
-          fill: color.$gray700;
-        }
+        fill: color.$gray700;
       }
     }
+  }
+
+  .mobileMenu{
+    display: block;
   }
 }

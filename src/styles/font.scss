@@ -62,7 +62,15 @@
   font-weight: 100;
 }
 
-@mixin H1-Regular {
+@mixin H1-Medium {
+  font-family: 'NotoSans';
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+@mixin H2-Regular {
   font-family: 'NotoSans';
   font-size: 42px;
   font-weight: normal;
@@ -70,7 +78,7 @@
   letter-spacing: 0;
 }
 
-@mixin H1-Medium {
+@mixin H2-Medium {
   font-family: 'NotoSans';
   font-size: 42px;
   font-weight: 500;
@@ -78,7 +86,7 @@
   letter-spacing: 0;
 }
 
-@mixin H2-Bold {
+@mixin H3-Bold {
   font-family: 'NotoSans';
   font-size: 30px;
   font-weight: bold;
@@ -86,7 +94,7 @@
   letter-spacing: 0.0025em;
 }
 
-@mixin H2-Medium {
+@mixin H3-Medium {
   font-family: 'NotoSans';
   font-size: 30px;
   font-weight: 500;
@@ -94,7 +102,7 @@
   letter-spacing: 0.0025em;
 }
 
-@mixin H2-Regular {
+@mixin H3-Regular {
   font-family: 'NotoSans';
   font-size: 30px;
   font-weight: normal;

@@ -8,7 +8,6 @@ import { ReactComponent as Language } from '../../assets/icons/language.svg'
 import { ReactComponent as Menu } from '../../assets/icons/menu.svg'
 import { ReactComponent as MenuOpen } from '../../assets/icons/menu_open.svg'
 import { MENUS } from '../../utils/Menus'
-import MobileMenu from '../Menu'
 
 const Header = () => {
   const { i18n, t } = useTranslation()
@@ -37,9 +36,9 @@ const Header = () => {
   }, [])
 
   return (
-    <div className={`${styles.container} ${dropDownMenuIsOpen && styles.menuOpen}`} ref={ref}>
-      <div className={styles.header}>
-        <div className={styles.menu}>
+    <div className={styles.container} ref={ref}>
+      <div className={`${styles.header} ${dropDownMenuIsOpen && styles.menuOpen}`}>
+        <div className={styles.menuContainer}>
           {MENUS.map((menu) => (
             <div className={styles.textButton} key={menu.key}>{t(menu.title)}</div>
           ))}
@@ -49,7 +48,7 @@ const Header = () => {
               button={
                 <div className={styles.option}>
                   <div className={styles.icon}><Language /></div>
-                  {LANGUAGES[selectedLanguage].title}
+                  <p>{LANGUAGES[selectedLanguage].title}</p>
                 </div>
               }
             >
@@ -64,12 +63,20 @@ const Header = () => {
               ))}
             </DropDown>
           </div>
-          <div className={styles.menuButton}>
-            {dropDownMenuIsOpen ? <MenuOpen onClick={() => setDropDownMenuIsOpen(false)}/> : <Menu onClick={() => setDropDownMenuIsOpen(true)}/>}
-          </div>
+        </div>
+        <div className={styles.menuButton}>
+          {dropDownMenuIsOpen ? <MenuOpen onClick={() => setDropDownMenuIsOpen(false)}/> : <Menu onClick={() => setDropDownMenuIsOpen(true)}/>}
         </div>
       </div>
-      {dropDownMenuIsOpen && <div className={styles.openMenu}><MobileMenu /></div>}
+      {dropDownMenuIsOpen && <div className={styles.openMenu}>
+        <div className={styles.mobileMenu}>
+          <div className={styles.textButtonContainer}>
+            {MENUS.map((menu) => (
+              <div className={styles.textButton} key={menu.key}>{t(menu.title)}</div>
+            ))}
+          </div>
+        </div>
+      </div>}
     </div>
   )
 }

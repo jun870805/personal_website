@@ -1,41 +1,66 @@
 :root[data-theme='light'] {
   --gray000: #FFFFFF;
-  --gray100: #F1F2F3;
-  --gray200: #DFE1E2;
-  --gray300: #D0D0D0;
-  --gray400: #B8B8B8;
-  --gray500: #999999;
-  --gray600: #6A6A6A;
-  --gray700: #464646;
-  --gray800: #1D1D1D;
-  --level1: 0px 0px 3px rgba(29, 29, 29, 0.2);
-  --level2: 0px 0px 12px rgba(29, 29, 29, 0.2);
-  --level4: 0px 8px 30px rgba(0, 86, 97, 0.1);
+  --gray100: #EDEDED;
+  --gray200: #D8D8D8;
+  --gray300: #C8C8C8;
+  --gray400: #B6B6B6;
+  --gray500: #929292;
+  --gray600: #6D6D6D;
+  --gray700: #494949;
+  --gray800: #242424;
+
+  --primary: #2A9CBF;
+  --primaryShade1: #258BAA;
+  --primaryShade2: #1C687F;
+  --primaryShade3: #17576A;
+  --primaryShade4: #134555;
+  --primaryShade5: #0E3440;
+
+  --secondary: #4BCE79;
+  --secondaryShade1: #37C86A;
+  --secondaryShade2: #31B45F;
+
+  --level1: 0px 0px 6px rgba(4, 74, 121, 0.3);
+  --level2: 0px 0px 12px rgba(4, 74, 121, 0.15);
+  --level3: 0px 2px 10px rgba(4, 74, 121, 0.15);
+  --level4: 0px 8px 30px rgba(4, 74, 121, 0.1);
+  --level5: 0px -3px 3px #242424;
+
+  --hover1: rgba(42, 156, 191, 0.2);
+  --hover2: rgba(24, 24, 24, 0.1);
 }
 
 :root[data-theme='dark'] {
-  --gray000: #262626;
-  --gray100: #383838;
-  --gray200: #525252;
-  --gray300: #808080;
-  --gray400: #9E9E9E;
-  --gray500: #B8B8B8;
-  --gray600: #DFE1E2;
-  --gray700: #F1F2F3;
+  --gray000: #242424;
+  --gray100: #494949;
+  --gray200: #6D6D6D;
+  --gray300: #929292;
+  --gray400: #B6B6B6;
+  --gray500: #C8C8C8;
+  --gray600: #D8D8D8;
+  --gray700: #EDEDED;
   --gray800: #FFFFFF;
-  --level1: 0px 0px 3px rgba(255, 255, 255, 0.3);
-  --level2: 0px 0px 12px rgba(255, 255, 255, 0.2);
-  --level4: 0px 8px 30px rgba(255, 255, 255, 0.1);
-}
 
-// Brand
-$primary: #0096A9;
-$primaryShade1: #5EBECA;
-$primaryShade2: #68D3E0;
-$primaryShade4: #FFFFFF;
-$secondary: #005661;
-$secondaryShade1: #008489;
-$secondaryShade2: #00A7AD;
+  --primary: #84CEE4;
+  --primaryShade1: #8ED2E6;
+  --primaryShade2: #97D5E8;
+  --primaryShade3: #A0D9EA;
+  --primaryShade4: #A8DCEC;
+  --primaryShade5: #B1E0EE;
+
+  --secondary: #87DEA5;
+  --secondaryShade1: #98E3B2;
+  --secondaryShade2: #A9E8BF;
+
+  --level1: 0px 0px 6px rgba(207, 190, 240, 0.8);
+  --level2: 0px 0px 12px rgba(207, 190, 240, 0.6);
+  --level3: 0px 2px 10px rgba(207, 190, 240, 0.4);
+  --level4: 0px 8px 30px rgba(207, 190, 240, 0.2);
+  --level5: 0px -3px 3px #FFFFFF;
+
+  --hover1: rgba(132, 206, 228, 0.2);
+  --hover2: rgba(255, 255, 255, 0.1);
+}
 
 // Neutrals
 $gray000: var(--gray000);
@@ -48,29 +73,35 @@ $gray600: var(--gray600);
 $gray700: var(--gray700);
 $gray800: var(--gray800);
 
+// Brand
+$primary: var(--primary);
+$primaryShade1: var(--primaryShade1);
+$primaryShade2: var(--primaryShade2);
+$primaryShade3: var(--primaryShade3);
+$primaryShade4: var(--primaryShade4);
+$primaryShade5: var(--primaryShade5);
+
+$secondary: var(--secondary);
+$secondaryShade1: var(--secondaryShade1);
+$secondaryShade2: var(--secondaryShade2);
+
 // Chart
-$chart1: #19C896;
-$chart2: #F9C501;
-$chart3: #BD6DFD;
-$chartRise: #40C16C;
-$chartRiseShade1: #2C924E;
-$chartRiseShade2: #87DEA5;
-$chartDrop: #EE4D4D;
-$chartDropShade1: #C54444;
-$chartDropShade2: #FF9595;
+$chart1: #21D7A3;
+$chart2: #F0C015;
+$chart3: #BE76F9;
+$chart4: #EE5454;
 
 // Messaging
-$information: #0070F5;
-$informationShade2: #E2EFFF;
-$success: #1CC336;
-$successShade: #CCF5D2;
-$error: #F5352A;
-$errorShade2: #FFBAB6;
-$warning: #F5C200;
-$warningShade2: #FFEBA0;
+$error: #E4868F;
+$warning: #E4BB86;
 
 // Shadow
 $level1: var(--level1);
 $level2: var(--level2);
-$level3: 0px 2px 10px rgba(0, 0, 0, 0.2);
-$level4: var(--level3);
+$level3: var(--level3);
+$level4: var(--level4);
+$level5: var(--level5);
+
+// Hover
+$hover1: var(--hover1);
+$hover2: var(--hover2);

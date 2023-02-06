@@ -3,5 +3,8 @@
         "about":"About me",
         "skills":"Skills",
         "project":"Side Project"
+    },
+    "home":{
+        "solgan":"Changing Lives through the Power of Technology"
     }
 }

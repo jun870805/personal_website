@@ -3,5 +3,8 @@
         "about":"關於我",
         "skills":"技能",
         "project":"作品集"
+    },
+    "home":{
+        "solgan":"通過科技的力量改變生活"
     }
 }
