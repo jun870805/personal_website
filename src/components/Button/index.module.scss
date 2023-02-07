@@ -1,0 +1,73 @@
+@use '../../styles/color.scss';
+@use '../../styles/breakpoint.scss';
+@import '../../styles/font.scss';
+
+button {
+  border: none;
+  cursor: pointer;
+  color: color.$gray000;
+  background-color: color.$primary;
+  white-space: nowrap;
+  align-items: center;
+
+  span {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.large {
+  border-radius: 35px;
+  @include Subtitle2-Regular;
+  height: 48px;
+}
+
+.medium {
+  border-radius: 25px;
+  @include Body1-Regular;
+  height: 38px;
+}
+
+.small {
+  border-radius: 25px;
+  @include Body2-Regular;
+  height: 32px;
+}
+
+.isHollow {
+  background-color: color.$gray000 !important;
+  border: 1.5px solid color.$primary !important;
+  color: color.$primary !important;
+}
+
+.disabled {
+  background: color.$gray300 !important;
+  color: color.$gray000 !important;
+  cursor: auto !important;
+}
+
+.disabledHollow {
+  background-color: color.$gray000 !important;
+  border: 1.5px solid color.$gray200 !important;
+  color: color.$gray200 !important;
+}
+
+.nonBorder {
+  border: none;
+  background-color: transparent;
+  color: color.$gray500;
+}
+
+@media (max-width: breakpoint.$mobile) {
+  .large {
+    border-radius: 25px;
+    @include Subtitle1-Regular;
+    height: 40px;
+  }
+  
+  .small {
+    border-radius: 25px;
+    @include Body1-Regular;
+    height: 32px;
+  }
+}

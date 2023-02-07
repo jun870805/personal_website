@@ -1,4 +1,14 @@
 {
+    "component":{
+        "notFound":{
+            "title":"找不到此页面",
+            "button":"返回首页"
+        },
+        "systemError":{
+            "title":"系统服务异常",
+            "button":"重新整理"
+        }
+    },
     "title":{
         "about":"关于我",
         "skills":"技能",

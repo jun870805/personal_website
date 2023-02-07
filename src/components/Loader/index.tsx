@@ -5,7 +5,7 @@ import { PulseLoader } from 'react-spinners'
 const Loader = () => {
   return (
     <div className={styles.loader}>
-      <PulseLoader color='#0096A9' speedMultiplier={0.6} margin='6px' />
+      <PulseLoader color='#84CEE4' speedMultiplier={0.6} margin='6px' />
     </div>
   )
 }

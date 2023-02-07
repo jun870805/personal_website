@@ -1,4 +1,14 @@
 {
+    "component":{
+        "notFound":{
+            "title":"Page Not Found",
+            "button":"Home"
+        },
+        "systemError":{
+            "title":"Service Unavailable",
+            "button":"Refresh"
+        }
+    },
     "title":{
         "about":"About me",
         "skills":"Skills",
