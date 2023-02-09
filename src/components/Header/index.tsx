@@ -8,9 +8,11 @@ import { ReactComponent as Language } from '../../assets/icons/language.svg'
 import { ReactComponent as Menu } from '../../assets/icons/menu.svg'
 import { ReactComponent as MenuOpen } from '../../assets/icons/menu_open.svg'
 import { MENUS } from '../../utils/Menus'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
   const { i18n, t } = useTranslation()
+  const navigate = useNavigate()
   const ref = useRef<HTMLInputElement>(null)
   const defaultLanguageId = localStorage.getItem(LOCAL_STORAGE_KEYS.SELECTED_LANGUAGE)
   const [selectedLanguage, setSelectedLanguage] = useState(defaultLanguageId ? LANGUAGES.findIndex((lang) => lang.key === defaultLanguageId) : 1)
@@ -40,7 +42,7 @@ const Header = () => {
       <div className={`${styles.header} ${dropDownMenuIsOpen && styles.menuOpen}`}>
         <div className={styles.menuContainer}>
           {MENUS.map((menu) => (
-            <div className={styles.textButton} key={menu.key}>{t(menu.title)}</div>
+            <div className={styles.textButton} key={menu.key} onClick={() => navigate(`../${menu.routes}`)}>{t(menu.title)}</div>
           ))}
           <div className={styles.languageButton}>
             <DropDown
@@ -72,7 +74,7 @@ const Header = () => {
         <div className={styles.mobileMenu}>
           <div className={styles.textButtonContainer}>
             {MENUS.map((menu) => (
-              <div className={styles.textButton} key={menu.key}>{t(menu.title)}</div>
+              <div className={styles.textButton} key={menu.key} onClick={() => navigate(`../${menu.routes}`)}>{t(menu.title)}</div>
             ))}
           </div>
         </div>

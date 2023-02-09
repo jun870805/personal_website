@@ -1,14 +1,17 @@
 export const MENUS = [
   {
     key: 'about',
-    title: 'title.about'
+    title: 'title.about',
+    routes: 'about'
   },
   {
     key: 'skills',
-    title: 'title.skills'
+    title: 'title.skills',
+    routes: ''
   },
   {
     key: 'project',
-    title: 'title.project'
+    title: 'title.project',
+    routes: ''
   }
 ]

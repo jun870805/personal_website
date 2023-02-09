@@ -1,0 +1,26 @@
+@use '../../styles/color.scss';
+@use '../../styles/breakpoint.scss';
+@import '../../styles/font.scss';
+
+.infoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .content {
+    @include Body1-Regular;
+    color: color.$gray800;
+    margin: 8px 36px;
+  }
+  
+}
+
+@media (max-width: breakpoint.$mobile){
+  .infoContainer {
+    .content {
+      margin: 8px 16px;
+    }
+  }
+}
