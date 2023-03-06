@@ -5,6 +5,7 @@ import NotFound from '../components/NotFound'
 import SystemError from '../components/SystemError'
 import AboutMe from '../pages/AboutMe'
 import BasicLayout from '../pages/BasicLayout'
+import Skills from '../pages/Skills'
 
 const Home = React.lazy(() => import('../pages/Home'))
 
@@ -22,6 +23,7 @@ const SwitchRoutes = () => {
         <Route path="/" element={<BasicLayout />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/error" element={<SystemError />} />
           <Route path="/loading" element={<Loader />} />
           <Route path="/*" element={<NotFound />} />

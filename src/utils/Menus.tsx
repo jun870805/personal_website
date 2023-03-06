@@ -7,7 +7,7 @@ export const MENUS = [
   {
     key: 'skills',
     title: 'title.skills',
-    routes: ''
+    routes: 'skills'
   },
   {
     key: 'project',

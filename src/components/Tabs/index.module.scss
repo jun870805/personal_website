@@ -1,0 +1,76 @@
+@use '../../styles/color.scss';
+@use '../../styles/breakpoint.scss';
+@import '../../styles/font.scss';
+
+.tabsContainer {
+  position: relative;
+}
+
+.tabs {
+  display: flex;
+  @include Subtitle1-Medium;
+  color: color.$gray500;
+  height: 35px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.tab {
+  margin: 0px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab:first-child {
+  margin: 0px 48px 0px 0px;
+}
+
+.tab:last-child {
+  margin: 0px 0px 0px 48px;
+}
+
+.selectedTab {
+  color: color.$primary;
+  @include Subtitle1-Bold;
+}
+
+.bottomLine {
+  width: 24px;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: color.$primary;
+}
+
+@media (max-width: breakpoint.$mobile) {
+  .tabs {
+    @include Subtitle2-Regular;
+  }
+
+  .tab {
+    margin: 0px 18px;
+  }
+
+  .tab:first-child {
+    margin: 0px 18px 0px 0px;
+  }
+  
+  .tab:last-child {
+    margin: 0px 0px 0px 18px;
+  }
+
+  .selectedTab {
+    @include Subtitle2-Bold;
+  }
+
+  .bottomLine {
+    width: 16px;
+    height: 2px;
+  }
+}

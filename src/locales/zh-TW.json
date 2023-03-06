@@ -22,5 +22,12 @@
         "content2":"我擅長使用Flutter 進行跨平台開發，並具備了相關知識，像是：串接原生(Android / iOS)的第三方SDK、上架APP Store …等等。後端方面則多數使用Python來進行API開發，以及機器學習的應用。另外，目前也持續在學習運用React來開發網頁。",
         "content3":"我的職業生涯中，接觸了許多不同的領域，有智慧醫療相關的產品開發、區塊鏈交易所與NFT市場。",
         "content4":"我熱衷學習新事物，並且擅長團隊合作、快速找出問題並提出解決方案。"
+    },
+    "skills":{
+        "tabs":{
+            "mobile":"Mobile",
+            "web":"Web",
+            "backend":"Backend"
+        }
     }
 }
