@@ -70,6 +70,14 @@
   letter-spacing: 0;
 }
 
+@mixin H2-Bold {
+  font-family: 'NotoSans';
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
 @mixin H2-Regular {
   font-family: 'NotoSans';
   font-size: 42px;

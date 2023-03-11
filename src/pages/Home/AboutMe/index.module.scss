@@ -6,24 +6,45 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  margin: 120px 0px 60px 0px;
+  margin: 64px 0px 32px 0px;
+
+  .title {
+    @include H2-Bold;
+    color: color.$gray800;
+    margin-bottom: 32px;
+  }
 
   .content {
-    @include Body1-Regular;
-    color: color.$gray800;
-    margin: 8px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    p{
+      @include Subtitle2-Regular;
+      color: color.$gray800;
+      margin: 8px 48px;
+    }
   }
   
 }
 
 @media (max-width: breakpoint.$mobile){
   .infoContainer {
-    margin: 56px 0px 28px 0px;
+    margin: 32px 0px 16px 0px;
+
+    .title {
+      @include Subtitle1-Bold;
+      margin-bottom: 16px;
+    }
     
     .content {
-      margin: 8px 16px;
+      p{
+        @include Body1-Regular;
+        margin: 8px 28px;
+      }
     }
   }
 }

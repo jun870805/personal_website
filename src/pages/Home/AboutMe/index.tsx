@@ -7,10 +7,13 @@ const AboutMe = () => {
 
   return (
     <div className={styles.infoContainer}>
-      <div className={styles.content}>{t('home.aboutMe.content1')}</div>
-      <div className={styles.content}>{t('home.aboutMe.content2')}</div>
-      <div className={styles.content}>{t('home.aboutMe.content3')}</div>
-      <div className={styles.content}>{t('home.aboutMe.content4')}</div>
+      <div className={styles.title}>{t('home.aboutMe.title')}</div>
+      <div className={styles.content}>
+        <p>{t('home.aboutMe.content1')}</p>
+        <p>{t('home.aboutMe.content2')}</p>
+        <p>{t('home.aboutMe.content3')}</p>
+        <p>{t('home.aboutMe.content4')}</p>
+      </div>
     </div>
   )
 }

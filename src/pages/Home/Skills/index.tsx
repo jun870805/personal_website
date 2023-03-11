@@ -16,6 +16,7 @@ const Skills = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.title}>{t('home.skills.title')}</div>
       <Tab
         tabTitles={TAB_ITEMS}
         selectedTab={selectedTab}

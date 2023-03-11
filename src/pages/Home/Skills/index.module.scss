@@ -4,11 +4,17 @@
 
 .container {
   width: 100%;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 120px 0;
+  margin: 32px 0;
+
+  .title {
+    @include H2-Bold;
+    color: color.$gray800;
+    margin-bottom: 32px;
+  }
 
   .infoContainer {
     margin-top: 48px;
@@ -37,7 +43,12 @@
 
 @media (max-width: breakpoint.$mobile){
   .container {
-    margin: 56px 0;
+    margin: 16px 0;
+
+    .title {
+      @include Subtitle1-Bold;
+      margin-bottom: 16px;
+    }
 
     .infoContainer {
       margin-top: 16px;

@@ -10,8 +10,8 @@ export const MENUS = [
     routes: 'projects'
   },
   {
-    key: 'Portfolio',
-    title: 'title.portfolio',
-    routes: 'portfolio'
+    key: 'Collections',
+    title: 'title.collections',
+    routes: 'collections'
   }
 ]

@@ -12,17 +12,19 @@
     "title":{
         "about":"关于我",
         "projects":"专案",
-        "portfolio":"作品"
+        "collections":"作品"
     },
     "home":{
         "solgan":"通过科技的力量改变生活",
         "aboutMe":{
+            "title": "关于我",
             "content1":"我是一名全端工程师。",
             "content2":"我擅长使用Flutter 进行跨平台开发，并具备了相关知识，像是：串接原生(Android / iOS)的第三方SDK、上架APP Store …等等。后端方面则多数使用Python来进行API开发，以及机器学习的应用。另外，目前也持续在学习运用React来开发网页。",
             "content3":"我的职业生涯中，接触了许多不同的领域，有智慧医疗相关的产品开发、区块链交易所与NFT市场。",
             "content4":"我热衷学习新事物，并且擅长团队合作、快速找出问题并提出解决方案。"
         },
         "skills":{
+            "title": "技能",
             "tabs":{
                 "mobile":"Mobile",
                 "web":"Web",

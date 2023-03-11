@@ -50,7 +50,7 @@
 
 @media (max-width: breakpoint.$mobile) {
   .tabs {
-    @include Subtitle2-Regular;
+    @include Body1-Regular;
   }
 
   .tab {
@@ -66,7 +66,7 @@
   }
 
   .selectedTab {
-    @include Subtitle2-Bold;
+    @include Body1-Bold;
   }
 
   .bottomLine {

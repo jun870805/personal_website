@@ -12,17 +12,19 @@
     "title":{
         "about":"About me",
         "projects":"Projects",
-        "portfolio":"Portfolio"
+        "collections":"Collections"
     },
     "home":{
         "solgan":"Changing Lives through the Power of Technology",
         "aboutMe":{
+            "title": "About Me",
             "content1":"I am a full-stack engineer.",
             "content2":"I am good at using Flutter for cross-platform development, and have relevant knowledge, such as: connecting native (Android / iOS) third-party SDKs, putting on the APP Store...etc. Most of the backend uses Python for API development and machine learning applications. In addition,I continue to learn how to use React to develop web.",
             "content3":"During my career, I have been exposed to many different fields, including product development related to smart healthcare, blockchain exchanges and NFT markets.",
             "content4":"I am passionate about learning new things, good at working in teams, quickly identifying problems and coming up with solutions."
         },
         "skills":{
+            "title": "Skills",
             "tabs":{
                 "mobile":"Mobile",
                 "web":"Web",
