@@ -2,89 +2,11 @@
 @use '../../styles/breakpoint.scss';
 @import '../../styles/font.scss';
 
-@keyframes backgroundColor{
-  from{ background-position: left; }
-  to{ background-position: right; }
-}
-
-.infoContainer {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(45deg, color.$chart1, color.$chart2, color.$chart3, color.$chart4, color.$chart5, color.$chart6);
-  // background-color: color.$chart1;
-  background-size: 1800%;
-  animation: backgroundColor 30s ease-in infinite alternate;
-  -webkit-animation: backgroundColor 30s ease-in infinite alternate;
-  
-
-  .title {
-    @include H1-Medium;
-    color: color.$gray800;
-    margin-bottom: 8px;
-  }
-
-  .solgan {
-    @include Subtitle1-Regular;
-    color: color.$gray800;
-    margin: 0 16px 16px 16px;
-    text-align: center;
-  }
-
-  .linkContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 48px 0;
-
-    .icon {
-      margin: 0 16px;
-      align-items: center;
-      cursor: pointer;
-
-      svg {
-        width: 48px;
-        height: 48px;
-        fill: color.$gray800;
-      }
-    }
-
-    .github{
-      svg {
-        path{
-          fill: color.$gray800;
-        }
-      }
-    }
-  }
 }
 
-.downContainer {
-  position: absolute;
-  bottom: 24px;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  svg {
-    width: 36px;
-    height: 36px;
-
-    path{
-      fill: color.$gray800;
-    }
-  }
-}
-
-@media (max-width: breakpoint.$mobile){
-  .downContainer {
-    bottom: 4px;
-  }
-}
+@media (max-width: breakpoint.$mobile){}

@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import styles from './index.module.scss'
-import Tab from '../../components/Tabs'
-import ProgressBar from '../../components/ProgressBar'
-import { SKILL_TYPES, SKILL_LIST } from '../../utils/Skills'
+import Tab from '../../../components/Tabs'
+import ProgressBar from '../../../components/ProgressBar'
+import { SKILL_TYPES, SKILL_LIST } from '../../../utils/Skills'
 
 const Skills = () => {
   const { t } = useTranslation()
-  const TAB_ITEMS = [t('skills.tabs.mobile'), t('skills.tabs.web'), t('skills.tabs.backend')]
+  const TAB_ITEMS = [t('home.skills.tabs.mobile'), t('home.skills.tabs.web'), t('home.skills.tabs.backend')]
   const [selectedTab, setSelectedTab] = useState(SKILL_TYPES.MOBILE)
 
   const handleTabOnSelected = (index: number) => {

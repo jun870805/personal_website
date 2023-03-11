@@ -1,15 +1,14 @@
-@use '../../styles/color.scss';
-@use '../../styles/breakpoint.scss';
-@import '../../styles/font.scss';
+@use '../../../styles/color.scss';
+@use '../../../styles/breakpoint.scss';
+@import '../../../styles/font.scss';
 
 .container {
-  position: absolute;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 120px 0;
 
   .infoContainer {
     margin-top: 48px;
@@ -38,6 +37,8 @@
 
 @media (max-width: breakpoint.$mobile){
   .container {
+    margin: 56px 0;
+
     .infoContainer {
       margin-top: 16px;
     }
