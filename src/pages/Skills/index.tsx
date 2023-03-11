@@ -25,10 +25,11 @@ const Skills = () => {
         {SKILL_LIST[selectedTab].map((skill) => (
           <div className={styles.skillContainer} key={skill.title}>
             <p>{skill.title}</p>
-            <div className={styles.skill}><ProgressBar percent={skill.percent} /></div>
+            <div className={styles.skill}>
+              <ProgressBar percent={skill.percent} />
+            </div>
           </div>
         ))}
-        {/* <ProgressBar className={styles.skill} percent={50}></ProgressBar> */}
       </div>
     </div>
   )

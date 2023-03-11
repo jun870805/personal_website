@@ -14,14 +14,12 @@ const root = ReactDOM.createRoot(
 )
 
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <I18nextProvider i18n={i18next}></I18nextProvider>
-      <BrowserRouter>
-        <SwitchRoutes />
-      </BrowserRouter>
-    </Provider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <I18nextProvider i18n={i18next}></I18nextProvider>
+    <BrowserRouter>
+      <SwitchRoutes />
+    </BrowserRouter>
+  </Provider>
 )
 
 reportWebVitals()

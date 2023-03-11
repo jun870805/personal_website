@@ -12,6 +12,6 @@ export const MENUS = [
   {
     key: 'project',
     title: 'title.project',
-    routes: ''
+    routes: 'projects'
   }
 ]

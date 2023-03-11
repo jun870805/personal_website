@@ -1,0 +1,22 @@
+@use '../../styles/color.scss';
+@use '../../styles/breakpoint.scss';
+@import '../../styles/font.scss';
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: breakpoint.$mobile){}
